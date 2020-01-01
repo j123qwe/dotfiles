@@ -40,6 +40,8 @@ for DOTFILE in $(find . -maxdepth 1 -name "dot.*" -type f  -printf "%f\n" | sed 
     echo "Installing new file to  ~/${DOTFILE}..."
     cp dot${DOTFILE} ~/${DOTFILE}
 done
+
+source ~/.bashrc #Refresh shell without having to logout/login
 }
 
 ##Execute
